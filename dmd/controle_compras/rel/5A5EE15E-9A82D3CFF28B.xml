@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="CONTROLE_COMPRAS" id="5A5EE15E-9456-415B-D61E-9A82D3CFF28B" mainViewID="AC627675-0D82-7DEA-4CA0-E8F2B240A599">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 00:55:43 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>controle_compras_2026_ddl.sql</fileName>
+<pathName>C:\Users\thoma\Downloads\lab-entrega-1</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

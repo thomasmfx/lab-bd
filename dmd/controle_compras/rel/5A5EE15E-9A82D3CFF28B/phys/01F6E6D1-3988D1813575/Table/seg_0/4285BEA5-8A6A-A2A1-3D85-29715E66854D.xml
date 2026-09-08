@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CONDICOES_FRETE" directorySegmentName="seg_0" id="4285BEA5-8A6A-A2A1-3D85-29715E66854D">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CON_FRE_ID" id="4A257625-C148-4957-6EBD-CDE4B9F60FB4">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CON_FRE_NOME" id="8344AC23-9DB8-FB5A-6B62-B8270EAA33D2">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CONDICOES_FRETE" id="43F8E7A2-AFB6-E36A-6111-2F8A0D9C0DBA">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<logging></logging>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

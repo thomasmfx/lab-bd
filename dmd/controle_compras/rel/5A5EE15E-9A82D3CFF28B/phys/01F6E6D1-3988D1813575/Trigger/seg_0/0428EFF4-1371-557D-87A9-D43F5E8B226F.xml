@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TG_SEQ_FORNECEDORES" directorySegmentName="seg_0" id="0428EFF4-1371-557D-87A9-D43F5E8B226F">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:21 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+    :NEW.FOR_ID := SEQ_FORNECEDORES.NEXTVAL;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>5A380205-2409-3538-BB47-931E3E17EEA5</table>
+</TriggerOraclev10g>

@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09001AFF-2718-23EA-64A0-EA41B8729788" name="ORDENS_SERVICO">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>71BC1D22-105E-BDBC-EF3B-476874F3B11B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OS_ID" id="0DA82917-7D8E-30C8-B7EA-F4B44E453990">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>CD6BA240-6048-7D16-44CF-54EA1E7C6B9F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_OS_NN_01</notNullConstraintName>
+</Column>
+<Column name="OS_NUMERO" id="1CC4EEAF-E4EC-A795-6D69-E073BD5C09A3">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>220730B3-BFC8-E022-D960-0D651C8A4431</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>66DCB819-9083-54D8-03C6-090BE57780D0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_OS_NN_02</notNullConstraintName>
+</Column>
+<Column name="OS_SOLICITANTE" id="BBC3454A-C5B0-62EE-798C-A66DF79398AD">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>596A0923-AAC9-3EE3-F935-758130383962</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_OS_NN_03</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="10265C7D-2BAC-C780-1E6C-707F46C76099" referredColumn="BC31615F-E95B-6601-D6A0-C0F2CDB27033"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AA3E0A47-70D4-2EAD-FD3B-5B793AA43B53" name="PK_ORDENS_SERVICO">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>00323BC7-ADA3-BA4D-52AB-C17EB62B2587</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DA82917-7D8E-30C8-B7EA-F4B44E453990"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4B76665-CCE0-0A9C-FF94-E6268DEA52D2" name="FK_OS_SOLICITANTE">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBC3454A-C5B0-62EE-798C-A66DF79398AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

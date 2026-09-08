@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4405E958-6DCA-B2FF-C020-23305E686145" name="STATUS">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>0D9A78A8-EFE6-2E53-3C4B-489F6C17B444</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STA_ID" id="BF700353-D846-227B-7BE2-703303883DB1">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>0F9B3A8A-CD26-F42B-4551-F95A593D040B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_STA_NN_01</notNullConstraintName>
+</Column>
+<Column name="STA_NOME" id="5E535DDD-04B5-030E-BBC1-63061ED68085">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>BD2DE6AD-BD31-C02E-3017-91E3155980D1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EF64E8CF-BB38-8856-405D-894537B14B71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_STA_NN_02</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A44E3D8D-8FF1-4837-9953-C66C998CB4F6" name="PK_STATUS">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>7CFDA96A-FBA3-2615-5867-57F7F0528788</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF700353-D846-227B-7BE2-703303883DB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

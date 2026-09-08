@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="909E8284-E331-9C66-7E1C-A9B72D9B75DD" containerWithKeyObject="453902F8-5EC4-1C48-95B1-EA08F11E1837" localFKIndex="79D360DA-0BCD-50ED-2500-B56AC3A4F1CB" name="FK_COM_STATUS">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>1326C50E-1A3A-3587-BAF9-74A94C0EC40B</importedID>
+<referredTableLongName>STATUS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4405E958-6DCA-B2FF-C020-23305E686145</referredTableID>
+<keyObject>A44E3D8D-8FF1-4837-9953-C66C998CB4F6</keyObject>
+<referredKeyID>A44E3D8D-8FF1-4837-9953-C66C998CB4F6</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>STA_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

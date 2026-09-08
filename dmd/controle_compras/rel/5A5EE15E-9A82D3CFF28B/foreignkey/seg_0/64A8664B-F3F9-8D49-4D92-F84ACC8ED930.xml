@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="64A8664B-F3F9-8D49-4D92-F84ACC8ED930" containerWithKeyObject="453902F8-5EC4-1C48-95B1-EA08F11E1837" localFKIndex="9380F708-8C1E-B357-2B91-585BF69A0B0B" name="FK_COM_PERFIL">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>2C01C735-9499-EC52-4B32-7FAF61F8223F</importedID>
+<referredTableLongName>PERFIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5968B8DD-F4F5-063E-392A-6646AB877B90</referredTableID>
+<keyObject>89DB5347-18C0-5C34-3828-35B438B39770</keyObject>
+<referredKeyID>89DB5347-18C0-5C34-3828-35B438B39770</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>PER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

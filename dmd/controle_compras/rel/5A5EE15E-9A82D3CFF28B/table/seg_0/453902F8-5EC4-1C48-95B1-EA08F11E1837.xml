@@ -1,0 +1,392 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="453902F8-5EC4-1C48-95B1-EA08F11E1837" name="COMPRAS">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>27328943-28B9-50FD-41BC-044A2D051DDA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COM_ID" id="D900BB78-0B47-6FAD-0918-01E6210B627B">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>357C6AB6-DE0F-01A6-4676-F37D6A9F18A6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_COM_NN_01</notNullConstraintName>
+</Column>
+<Column name="COM_DT_PEDIDO" id="3203EBA6-ACE4-C7C2-A7D7-ADC6880C2CFF">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>12F7811D-B3B0-7D63-680F-ABBCC97B16AE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>28884B2E-78EB-C058-F33C-9E18CBCB4E41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_COM_NN_02</notNullConstraintName>
+</Column>
+<Column name="COM_OS" id="906F8BCB-1172-C072-BFCC-14C487AE666C">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>4E79C8AC-1D4F-71AE-2324-4D5BF10FE73C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_COM_NN_03</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="C3A86EA2-11CF-3949-84E4-68208C4D8993" referredColumn="0DA82917-7D8E-30C8-B7EA-F4B44E453990"/>
+</associations>
+</Column>
+<Column name="COM_DESENHO" id="5A53F1AC-1A1D-3D04-73EE-48D7AC899F60">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>E4F8EA7E-064C-C6D0-272A-2525A640C679</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_COM_NN_04</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="8EEEE71D-F164-AB9A-8704-872E428E65DA" referredColumn="FF7D170E-4BCF-BE40-587E-7857A4615278"/>
+</associations>
+</Column>
+<Column name="COM_MATERIAL" id="6FA22DA2-DE7D-C8E9-6FE8-EA229901F231">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>45E3B613-C10D-A96E-5F0B-635EE664A981</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_COM_NN_05</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="84685C0A-FA17-B2A3-2BD5-5EC731B1CFFA" referredColumn="A263F7FB-7C41-4F35-DFB2-881DDDCC1821"/>
+</associations>
+</Column>
+<Column name="COM_DESCRICAO_MATERIAL" id="6E595B6D-CFCD-9534-A46A-928ED053F179">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>C274C3FA-6213-E91A-9D2F-A007F6E69B11</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>66DCB819-9083-54D8-03C6-090BE57780D0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_QTD" id="C4BF0A35-5BF7-BE03-9559-1C54628C823E">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>2AF86FED-E8FA-60E1-A1BB-8400E2AF4DF8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_COM_NN_06</notNullConstraintName>
+</Column>
+<Column name="COM_PERFIL" id="37B7AED8-2073-7D57-31A2-A70D5643BAE9">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>A4CA8516-6F56-3742-27F1-A37AED320347</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64A8664B-F3F9-8D49-4D92-F84ACC8ED930" referredColumn="1299660A-DCD4-DFE0-E544-0D9E31C4695D"/>
+</associations>
+</Column>
+<Column name="COM_DIAMETRO_INT" id="1A5C7809-F53A-8524-3174-6B890C4F5C37">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>54889B69-900E-31F7-2308-8235F0EBEC07</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2E17F189-E58E-4D85-BE99-A97E756BD9C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_DIAMETRO_EXT" id="F27571F8-401D-6398-1572-D7EFD8C9B393">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>C5506F07-925F-D6D3-F9BD-EBEFAF2F58EB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2E17F189-E58E-4D85-BE99-A97E756BD9C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_ESPESSURA" id="42A82CC6-06AB-6728-1AE3-2DB3D6BAED78">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>19AC3B83-ADEF-EE6B-C941-52E80AB25A65</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2E17F189-E58E-4D85-BE99-A97E756BD9C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_LARGURA" id="2B028073-CAE6-8471-4F83-3B6D1EDD1D67">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>02ED93AF-07E5-ADE2-B0E0-6DA877794073</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2E17F189-E58E-4D85-BE99-A97E756BD9C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_COMPRIMENTO" id="BEF4F328-64DF-6CE3-ACAD-230385DF7ED6">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>242F5E68-0921-0C81-17BD-B8E877B60EEE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2E17F189-E58E-4D85-BE99-A97E756BD9C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_DT_PRAZO" id="9A5339AA-B243-E569-ED04-22A280FAD0D0">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>FFED1C77-B41C-C1F8-069F-44C42F101DF5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>28884B2E-78EB-C058-F33C-9E18CBCB4E41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_STATUS" id="937DCB7F-C804-8749-375B-52E196335802">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>4E69DDFB-D81C-C35C-5EFF-F6AE33C126E7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="909E8284-E331-9C66-7E1C-A9B72D9B75DD" referredColumn="BF700353-D846-227B-7BE2-703303883DB1"/>
+</associations>
+</Column>
+<Column name="COM_FORNECEDOR" id="6DA333F7-7EF9-CBD4-118B-44530047D810">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>D10BAC8F-7759-4A56-50BC-686665848592</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_COM_NN_07</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="1699BBBD-CCD6-EE0C-10EA-04BEB9A2858D" referredColumn="CCADD15B-8389-6747-67AA-71F492A59D96"/>
+</associations>
+</Column>
+<Column name="COM_DT_COMPRA_MATERIAL" id="A988F5C7-45DE-AF85-04F9-45699B8CFD5C">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>FF5BF47F-1696-F1F3-3FC4-15A9370EBD5A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>28884B2E-78EB-C058-F33C-9E18CBCB4E41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_FRETE" id="F6982A96-F861-D7F8-0929-FCECB929F01E">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>54BC93C7-2E7A-2B79-5BF2-6D1DB5486359</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AC800A0E-7CC1-67D2-7142-EF4645A2B657</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="502FA751-78E4-CEAC-C219-9E18401A1969" referredColumn="4A257625-C148-4957-6EBD-CDE4B9F60FB4"/>
+</associations>
+</Column>
+<Column name="COM_NFE" id="2EE1DF26-6B95-0EDD-1156-9A82D0B23B31">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>99BB7356-6434-3894-829F-191786A286B9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EF64E8CF-BB38-8856-405D-894537B14B71</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_DT_CHEGADA_MATERIAL" id="EA9EAECE-663B-AFE0-0692-5C1EA6FD97D9">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>188D50EE-9679-6B70-99B0-B57BA6A0D259</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>28884B2E-78EB-C058-F33C-9E18CBCB4E41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COM_INFO_ADICIONAIS" id="259746C0-F8A6-2987-5B97-A42C0FA2CA2F">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>92B79756-A564-E1DA-4DD1-C72DAAC9EC4B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A2E1D5D1-AAA9-D077-3F17-33D4AA53D98B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1450DD68-EAB3-33E8-1969-7920B29C90E4" name="PK_COMPRAS">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>78EEABE1-D5CF-2D32-2190-4E78C478D615</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D900BB78-0B47-6FAD-0918-01E6210B627B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE959F4F-3F1D-2595-9ED2-0971F79BFE0C" name="FK_COM_DESENHO">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A53F1AC-1A1D-3D04-73EE-48D7AC899F60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9C96A73-209C-FAFC-BF2B-3432ED81BEEF" name="FK_COM_FORNECEDOR">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DA333F7-7EF9-CBD4-118B-44530047D810"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F8210DF-61CC-1BCF-B4E1-A5BDDFEC4CC8" name="FK_COM_FRETE">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6982A96-F861-D7F8-0929-FCECB929F01E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6ADB198E-C169-309E-3926-5CCC49A1C0EF" name="FK_COM_MATERIAL">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FA22DA2-DE7D-C8E9-6FE8-EA229901F231"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8563D7DB-4348-1F8D-9C3A-F6F56F04C37A" name="FK_COM_OS">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="906F8BCB-1172-C072-BFCC-14C487AE666C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9380F708-8C1E-B357-2B91-585BF69A0B0B" name="FK_COM_PERFIL">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37B7AED8-2073-7D57-31A2-A70D5643BAE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79D360DA-0BCD-50ED-2500-B56AC3A4F1CB" name="FK_COM_STATUS">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="937DCB7F-C804-8749-375B-52E196335802"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

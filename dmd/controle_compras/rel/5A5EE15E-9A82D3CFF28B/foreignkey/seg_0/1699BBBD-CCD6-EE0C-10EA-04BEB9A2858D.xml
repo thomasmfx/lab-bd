@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1699BBBD-CCD6-EE0C-10EA-04BEB9A2858D" containerWithKeyObject="453902F8-5EC4-1C48-95B1-EA08F11E1837" localFKIndex="A9C96A73-209C-FAFC-BF2B-3432ED81BEEF" name="FK_COM_FORNECEDOR">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>B325B02B-CC61-03C3-F65B-CFB8560F0EB0</importedID>
+<referredTableLongName>FORNECEDORES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5A380205-2409-3538-BB47-931E3E17EEA5</referredTableID>
+<keyObject>C088955D-52FC-E435-E00D-3DBB8C02B1FE</keyObject>
+<referredKeyID>C088955D-52FC-E435-E00D-3DBB8C02B1FE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>FOR_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

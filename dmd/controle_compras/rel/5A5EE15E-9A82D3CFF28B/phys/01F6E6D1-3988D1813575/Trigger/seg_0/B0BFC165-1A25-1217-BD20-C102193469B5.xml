@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TG_SEQ_SOLICITANTES" directorySegmentName="seg_0" id="B0BFC165-1A25-1217-BD20-C102193469B5">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:21 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+    :NEW.SOL_ID := SEQ_SOLICITANTES.NEXTVAL;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>BA0C60E3-C401-71EB-E82F-9CF7B43AE03D</table>
+</TriggerOraclev10g>

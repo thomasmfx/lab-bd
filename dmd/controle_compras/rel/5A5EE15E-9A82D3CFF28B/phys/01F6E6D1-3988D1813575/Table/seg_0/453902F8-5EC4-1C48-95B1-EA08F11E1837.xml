@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="COMPRAS" directorySegmentName="seg_0" id="453902F8-5EC4-1C48-95B1-EA08F11E1837">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COM_DIAMETRO_INT" id="1A5C7809-F53A-8524-3174-6B890C4F5C37">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_INFO_ADICIONAIS" id="259746C0-F8A6-2987-5B97-A42C0FA2CA2F">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_LARGURA" id="2B028073-CAE6-8471-4F83-3B6D1EDD1D67">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_NFE" id="2EE1DF26-6B95-0EDD-1156-9A82D0B23B31">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_DT_PEDIDO" id="3203EBA6-ACE4-C7C2-A7D7-ADC6880C2CFF">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_PERFIL" id="37B7AED8-2073-7D57-31A2-A70D5643BAE9">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_ESPESSURA" id="42A82CC6-06AB-6728-1AE3-2DB3D6BAED78">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_DESENHO" id="5A53F1AC-1A1D-3D04-73EE-48D7AC899F60">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_FORNECEDOR" id="6DA333F7-7EF9-CBD4-118B-44530047D810">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_DESCRICAO_MATERIAL" id="6E595B6D-CFCD-9534-A46A-928ED053F179">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_MATERIAL" id="6FA22DA2-DE7D-C8E9-6FE8-EA229901F231">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_OS" id="906F8BCB-1172-C072-BFCC-14C487AE666C">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_STATUS" id="937DCB7F-C804-8749-375B-52E196335802">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_DT_PRAZO" id="9A5339AA-B243-E569-ED04-22A280FAD0D0">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_DT_COMPRA_MATERIAL" id="A988F5C7-45DE-AF85-04F9-45699B8CFD5C">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_COMPRIMENTO" id="BEF4F328-64DF-6CE3-ACAD-230385DF7ED6">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_QTD" id="C4BF0A35-5BF7-BE03-9559-1C54628C823E">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_ID" id="D900BB78-0B47-6FAD-0918-01E6210B627B">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_DT_CHEGADA_MATERIAL" id="EA9EAECE-663B-AFE0-0692-5C1EA6FD97D9">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_DIAMETRO_EXT" id="F27571F8-401D-6398-1572-D7EFD8C9B393">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COM_FRETE" id="F6982A96-F861-D7F8-0929-FCECB929F01E">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_COM_FRETE" id="3F8210DF-61CC-1BCF-B4E1-A5BDDFEC4CC8">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_COM_MATERIAL" id="6ADB198E-C169-309E-3926-5CCC49A1C0EF">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_COM_STATUS" id="79D360DA-0BCD-50ED-2500-B56AC3A4F1CB">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_COM_OS" id="8563D7DB-4348-1F8D-9C3A-F6F56F04C37A">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_COM_PERFIL" id="9380F708-8C1E-B357-2B91-585BF69A0B0B">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_COM_FORNECEDOR" id="A9C96A73-209C-FAFC-BF2B-3432ED81BEEF">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_COM_DESENHO" id="FE959F4F-3F1D-2595-9ED2-0971F79BFE0C">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_COMPRAS" id="1450DD68-EAB3-33E8-1969-7920B29C90E4">
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<logging></logging>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TG_SEQ_PERFIS" directorySegmentName="seg_0" id="B5005C0D-8955-A450-D968-A0A7570ED384">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:21 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[BEGIN
+    :NEW.PER_ID := SEQ_PERFIS.NEXTVAL;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>5968B8DD-F4F5-063E-392A-6646AB877B90</table>
+</TriggerOraclev10g>

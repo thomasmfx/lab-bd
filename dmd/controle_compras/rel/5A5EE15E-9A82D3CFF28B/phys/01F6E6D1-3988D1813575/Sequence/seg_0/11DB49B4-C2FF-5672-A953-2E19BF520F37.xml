@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="SEQ_SOLICITANTES" directorySegmentName="seg_0" id="11DB49B4-C2FF-5672-A953-2E19BF520F37">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:21 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<incrementBy>1</incrementBy>
+<maxValue>9999999999999999999999999999</maxValue>
+<minValue>1</minValue>
+<noCache>YES</noCache>
+<startWith>1</startWith>
+</SequenceOraclev10g>

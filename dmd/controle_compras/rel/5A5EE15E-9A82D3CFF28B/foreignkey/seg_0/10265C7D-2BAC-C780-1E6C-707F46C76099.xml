@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="10265C7D-2BAC-C780-1E6C-707F46C76099" containerWithKeyObject="09001AFF-2718-23EA-64A0-EA41B8729788" localFKIndex="E4B76665-CCE0-0A9C-FF94-E6268DEA52D2" name="FK_OS_SOLICITANTE">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>CDD7F0B6-650F-7DF7-A4AF-6760FC5DFB1E</importedID>
+<referredTableLongName>SOLICITANTES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BA0C60E3-C401-71EB-E82F-9CF7B43AE03D</referredTableID>
+<keyObject>DD00D4C4-0238-9C1C-2CA3-29711368ED39</keyObject>
+<referredKeyID>DD00D4C4-0238-9C1C-2CA3-29711368ED39</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SOL_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

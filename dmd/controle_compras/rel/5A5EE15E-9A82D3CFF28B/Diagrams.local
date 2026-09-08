@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="AC627675-0D82-7DEA-4CA0-E8F2B240A599" name="CONTROLE_COMPRAS" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

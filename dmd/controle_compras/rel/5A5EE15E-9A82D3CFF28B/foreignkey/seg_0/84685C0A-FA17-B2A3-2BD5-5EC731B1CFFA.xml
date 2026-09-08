@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="84685C0A-FA17-B2A3-2BD5-5EC731B1CFFA" containerWithKeyObject="453902F8-5EC4-1C48-95B1-EA08F11E1837" localFKIndex="6ADB198E-C169-309E-3926-5CCC49A1C0EF" name="FK_COM_MATERIAL">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>7BC00E62-97BD-65FD-B0EE-85CF72EA0F9D</importedID>
+<referredTableLongName>MATERIAIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>460860F3-B750-9A99-8AE6-5C6C0377DFB7</referredTableID>
+<keyObject>0858DCDC-F71E-273B-3367-424038715870</keyObject>
+<referredKeyID>0858DCDC-F71E-273B-3367-424038715870</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MAT_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

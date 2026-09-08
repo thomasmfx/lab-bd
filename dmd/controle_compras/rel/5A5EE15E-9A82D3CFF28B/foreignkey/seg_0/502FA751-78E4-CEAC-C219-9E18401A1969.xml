@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="502FA751-78E4-CEAC-C219-9E18401A1969" containerWithKeyObject="453902F8-5EC4-1C48-95B1-EA08F11E1837" localFKIndex="3F8210DF-61CC-1BCF-B4E1-A5BDDFEC4CC8" name="FK_COM_FRETE">
+<sourceDDLFile>controle_compras_2026_ddl.sql</sourceDDLFile>
+<createdBy>thoma</createdBy>
+<createdTime>2026-09-08 01:00:33 UTC</createdTime>
+<ownerDesignName>controle_compras</ownerDesignName>
+<importedID>5A9630A8-41F9-68A1-A99B-B8518F3B405C</importedID>
+<referredTableLongName>CONDICOES_FRETE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4285BEA5-8A6A-A2A1-3D85-29715E66854D</referredTableID>
+<keyObject>43F8E7A2-AFB6-E36A-6111-2F8A0D9C0DBA</keyObject>
+<referredKeyID>43F8E7A2-AFB6-E36A-6111-2F8A0D9C0DBA</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>CON_FRE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
