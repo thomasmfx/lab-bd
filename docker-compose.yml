@@ -1,0 +1,25 @@
+services:
+  oracle:
+    image: gvenzl/oracle-xe:21-slim
+    ports:
+      # Só localhost: as senhas do projeto são fixas e fracas.
+      - "127.0.0.1:1521:1521"
+    environment:
+      # Senha de SYS e SYSTEM; os usuários do projeto são criados por controle_compras_usuarios.sql.
+      ORACLE_PASSWORD: oracle
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+      - ./docker/initdb:/container-entrypoint-initdb.d:ro
+      - ./controle_compras_usuarios.sql:/ddl/controle_compras_usuarios.sql:ro
+      - ./controle_compras_ddl.sql:/ddl/controle_compras_ddl.sql:ro
+      - ./controle_compras_temporal_ddl.sql:/ddl/controle_compras_temporal_ddl.sql:ro
+      - ./controle_compras_auditoria_ddl.sql:/ddl/controle_compras_auditoria_ddl.sql:ro
+    healthcheck:
+      # healthcheck.sh da imagem só confere se o banco abriu; o marcador indica que o schema já foi criado.
+      test: ["CMD-SHELL", "healthcheck.sh && test -f /opt/oracle/oradata/.schema_criado"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+
+volumes:
+  oracle-data:
