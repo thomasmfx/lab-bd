@@ -78,3 +78,97 @@ Tabelas auxiliares utilizadas para normalizar os dados, garantir integridade ref
 | :--- | :--- | :--- | :--- |
 | `CON_FRE_ID` | NUMBER(10,0) | PK, NOT NULL | Identificador único da condição logística. |
 | `CON_FRE_NOME` | VARCHAR2(3) | NOT NULL | Sigla da modalidade logística de transporte (ex: CIF, FOB). |
+
+## 3. Views do Dashboard
+Criadas por `controle_compras_mviews_ddl.sql`. Leem a última versão de cada compra em `COMPRAS_HIST`, que inclui as compras removidas pelo `apagar`. As views materializadas (`MV_*`) guardam somas e contagens; médias e percentuais são calculados no BI.
+
+### VW_COMPRAS_CONSOLIDADAS (view)
+Uma linha por compra. Base das views materializadas.
+
+| Coluna | Tipo | Descrição |
+| :--- | :--- | :--- |
+| `COM_ID` | NUMBER | Identificador da compra. |
+| `DT_PEDIDO` | DATE | Data do pedido. |
+| `MES_PEDIDO` | DATE | Primeiro dia do mês do pedido. |
+| `OS_ID` | NUMBER | Identificador da OS. |
+| `OS_NUMERO` | VARCHAR2(100) | Número da OS. |
+| `SOLICITANTE` | VARCHAR2(100) | Solicitante da OS. |
+| `FOR_ID` | NUMBER | Identificador do fornecedor. |
+| `FORNECEDOR` | VARCHAR2(100) | Nome do fornecedor. |
+| `MATERIAL` | VARCHAR2(100) | Nome do material. |
+| `PERFIL` | VARCHAR2(100) | Perfil do material; `SEM PERFIL` quando nulo. |
+| `STATUS_PEDIDO` | VARCHAR2(32) | Status da compra; `SEM STATUS` quando nulo. |
+| `EM_ABERTO` | CHAR(1) | `N` se o status é `ENTREGUE`; `S` nos demais casos. |
+| `FRETE` | VARCHAR2(3) | Condição de frete (CIF, FOB) ou nulo. |
+| `QTD` | NUMBER | Quantidade de peças. |
+| `DT_PRAZO` | DATE | Prazo de entrega. |
+| `DT_COMPRA` | DATE | Data da compra junto ao fornecedor. |
+| `DT_CHEGADA` | DATE | Data de chegada do material. |
+| `DT_CORTE` | DATE | Data do pedido mais recente; referência para idade e prazo vencido. |
+| `IDADE_DIAS` | NUMBER | Dias entre o pedido e `DT_CORTE`. |
+
+### MV_DESEMPENHO_FORNECEDOR
+Uma linha por fornecedor e mês do pedido.
+
+| Coluna | Tipo | Descrição |
+| :--- | :--- | :--- |
+| `FOR_ID` | NUMBER | Identificador do fornecedor. |
+| `FORNECEDOR` | VARCHAR2(100) | Nome do fornecedor. |
+| `MES_PEDIDO` | DATE | Primeiro dia do mês do pedido. |
+| `TOTAL_PEDIDOS` | NUMBER | Quantidade de compras. |
+| `QUANTIDADE_PECAS` | NUMBER | Soma das quantidades de peças. |
+| `PEDIDOS_COMPRADOS` | NUMBER | Compras com data de compra registrada. |
+| `PEDIDOS_COM_CHEGADA` | NUMBER | Compras com data de chegada registrada. |
+| `PEDIDOS_ATRASADOS` | NUMBER | Compras com chegada depois do prazo. |
+| `SOMA_DIAS_COTACAO` | NUMBER | Soma dos dias entre pedido e compra. Dividir por `PEDIDOS_COMPRADOS` para a média. |
+| `SOMA_DIAS_ENTREGA` | NUMBER | Soma dos dias entre pedido e chegada. Dividir por `PEDIDOS_COM_CHEGADA` para a média. |
+| `PEDIDOS_CIF` | NUMBER | Compras com frete CIF. |
+| `PEDIDOS_FOB` | NUMBER | Compras com frete FOB. |
+
+### MV_EVOLUCAO_STATUS
+Uma linha por mês do pedido e status.
+
+| Coluna | Tipo | Descrição |
+| :--- | :--- | :--- |
+| `MES_PEDIDO` | DATE | Primeiro dia do mês do pedido. |
+| `STATUS_PEDIDO` | VARCHAR2(32) | Status da compra. |
+| `EM_ABERTO` | CHAR(1) | `S` para status diferente de `ENTREGUE`. |
+| `TOTAL_PEDIDOS` | NUMBER | Quantidade de compras. |
+| `QUANTIDADE_PECAS` | NUMBER | Soma das quantidades de peças. |
+
+### MV_BACKLOG_COMPRAS
+Só compras em aberto. Uma linha por mês do pedido, status, fornecedor e faixa de idade.
+
+| Coluna | Tipo | Descrição |
+| :--- | :--- | :--- |
+| `MES_PEDIDO` | DATE | Primeiro dia do mês do pedido. |
+| `STATUS_PEDIDO` | VARCHAR2(32) | Status da compra. |
+| `FOR_ID` | NUMBER | Identificador do fornecedor. |
+| `FORNECEDOR` | VARCHAR2(100) | Nome do fornecedor. |
+| `FAIXA_IDADE` | VARCHAR2(5) | Idade do pedido em `DT_CORTE`: `0-30`, `31-60`, `61-90` ou `90+` dias. |
+| `ORDEM_FAIXA` | NUMBER | Ordem da faixa (1 a 4), para ordenação no BI. |
+| `TOTAL_PEDIDOS` | NUMBER | Quantidade de compras em aberto. |
+| `QUANTIDADE_PECAS` | NUMBER | Soma das quantidades de peças. |
+| `PEDIDOS_SEM_PRAZO` | NUMBER | Compras sem prazo registrado. |
+| `PEDIDOS_PRAZO_VENCIDO` | NUMBER | Compras com prazo anterior a `DT_CORTE`. |
+| `IDADE_MAX_DIAS` | NUMBER | Idade da compra mais antiga do grupo, em dias. |
+| `DT_CORTE` | DATE | Data de referência da idade e do prazo vencido. |
+
+### MV_PRONTIDAO_OS
+Uma linha por OS (par número + solicitante, como a carga registra).
+
+| Coluna | Tipo | Descrição |
+| :--- | :--- | :--- |
+| `OS_ID` | NUMBER | Identificador da OS. |
+| `OS_NUMERO` | VARCHAR2(100) | Número da OS. |
+| `SOLICITANTE` | VARCHAR2(100) | Solicitante da OS. |
+| `DT_PRIMEIRO_PEDIDO` | DATE | Data do primeiro pedido de material da OS. |
+| `MES_PRIMEIRO_PEDIDO` | DATE | Primeiro dia do mês do primeiro pedido. |
+| `ITENS_TOTAL` | NUMBER | Compras da OS. |
+| `ITENS_ENTREGUES` | NUMBER | Compras com status `ENTREGUE`. |
+| `ITENS_COTANDO` | NUMBER | Compras com status `COTANDO`. |
+| `ITENS_PARADOS` | NUMBER | Compras com status `PARADO`. |
+| `FORNECEDORES_DISTINTOS` | NUMBER | Fornecedores diferentes envolvidos na OS. |
+| `SITUACAO_OS` | VARCHAR2(10) | `PRONTA` (todas as compras entregues), `PARCIAL` ou `AGUARDANDO` (nenhuma entregue). |
+| `DIAS_AGUARDANDO` | NUMBER | Dias entre o primeiro pedido e `DT_CORTE`; nulo se a OS está pronta. |
+| `PRAZO_ULTIMO_ITEM` | DATE | Maior prazo entre as compras em aberto da OS. |

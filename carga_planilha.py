@@ -1,11 +1,13 @@
 """Carrega no banco Oracle as compras da planilha CONTROLE_COMPRAS.xlsx, uma carga por período.
 
-Pré-requisito: controle_compras_ddl.sql e controle_compras_temporal_ddl.sql já executados.
+Pré-requisito: controle_compras_ddl.sql, controle_compras_temporal_ddl.sql e
+controle_compras_mviews_ddl.sql já executados.
 Conecta como LAB no banco do docker-compose (localhost:1521/XEPDB1).
 
 Uso: python carga_planilha.py <1|2|3|apagar>
   1, 2, 3  sobe as compras do período da carga
   apagar   remove todas as compras (as tabelas de domínio são cadastro e ficam)
+Depois de cada comando, as views materializadas do dashboard são atualizadas.
 """
 import sys
 from datetime import datetime
@@ -41,6 +43,8 @@ DOMINIOS = (
     ("fornecedor", "FORNECEDORES", "FOR_ID", "FOR_NOME"),
     ("frete", "CONDICOES_FRETE", "CON_FRE_ID", "CON_FRE_NOME"),
 )
+
+MVIEWS = ("MV_DESEMPENHO_FORNECEDOR", "MV_EVOLUCAO_STATUS", "MV_BACKLOG_COMPRAS", "MV_PRONTIDAO_OS")
 
 INSERT_COMPRA = """
     INSERT INTO COMPRAS (
@@ -125,6 +129,12 @@ def conectar():
     return oracledb.connect(user="lab", password="lab", dsn="localhost:1521/XEPDB1")
 
 
+def atualizar_views(cursor):
+    cursor.callproc("DBMS_MVIEW.REFRESH",
+                    keyword_parameters={"list": ",".join(MVIEWS), "method": "C" * len(MVIEWS)})
+    print(f"Views atualizadas: {', '.join(MVIEWS)}")
+
+
 def carregar(numero):
     inicio, fim = CARGAS[numero]
     compras = [c for c in ler_planilha(PLANILHA) if inicio <= c["dt_pedido"] < fim]
@@ -150,6 +160,7 @@ def carregar(numero):
         cursor.executemany(INSERT_COMPRA, compras)
         conexao.commit()
         print(f"COMPRAS: {len(compras)} inseridos")
+        atualizar_views(cursor)
 
 
 def apagar():
@@ -157,6 +168,7 @@ def apagar():
         cursor.execute("DELETE FROM COMPRAS")
         conexao.commit()
         print(f"COMPRAS: {cursor.rowcount} apagados")
+        atualizar_views(cursor)
 
 
 def main():

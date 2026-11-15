@@ -1,7 +1,8 @@
 --------------------------------------------------------
 --  Usuários do banco
 --  Executar como SYS ou SYSTEM no PDB XEPDB1, antes dos outros scripts:
---    controle_compras_ddl.sql e controle_compras_temporal_ddl.sql como LAB,
+--    controle_compras_ddl.sql, controle_compras_temporal_ddl.sql e
+--    controle_compras_mviews_ddl.sql como LAB,
 --    controle_compras_auditoria_ddl.sql como LAB_AUDIT.
 --
 --  LAB é dono das tabelas. LAB_AUDIT é dono da auditoria, que o LAB não acessa;
@@ -10,6 +11,8 @@
 
 CREATE USER LAB IDENTIFIED BY lab QUOTA UNLIMITED ON USERS;
 GRANT CONNECT, RESOURCE TO LAB;
+-- RESOURCE não inclui views; o LAB cria as do dashboard (controle_compras_mviews_ddl.sql).
+GRANT CREATE VIEW, CREATE MATERIALIZED VIEW TO LAB;
 
 CREATE USER LAB_AUDIT IDENTIFIED BY lab_audit QUOTA UNLIMITED ON USERS;
 GRANT CONNECT, RESOURCE TO LAB_AUDIT;

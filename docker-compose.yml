@@ -13,6 +13,7 @@ services:
       - ./controle_compras_usuarios.sql:/ddl/controle_compras_usuarios.sql:ro
       - ./controle_compras_ddl.sql:/ddl/controle_compras_ddl.sql:ro
       - ./controle_compras_temporal_ddl.sql:/ddl/controle_compras_temporal_ddl.sql:ro
+      - ./controle_compras_mviews_ddl.sql:/ddl/controle_compras_mviews_ddl.sql:ro
       - ./controle_compras_auditoria_ddl.sql:/ddl/controle_compras_auditoria_ddl.sql:ro
     healthcheck:
       # healthcheck.sh da imagem só confere se o banco abriu; o marcador indica que o schema já foi criado.

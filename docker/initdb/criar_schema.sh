@@ -11,6 +11,7 @@ sqlplus -s lab/lab@//localhost/XEPDB1 <<SQL &&
 WHENEVER SQLERROR EXIT FAILURE
 @/ddl/controle_compras_ddl.sql
 @/ddl/controle_compras_temporal_ddl.sql
+@/ddl/controle_compras_mviews_ddl.sql
 SQL
 sqlplus -s lab_audit/lab_audit@//localhost/XEPDB1 <<SQL &&
 WHENEVER SQLERROR EXIT FAILURE
